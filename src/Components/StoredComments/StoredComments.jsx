@@ -1,6 +1,21 @@
+import React, { useState } from 'react';
+import AddComment from "../AddComment/AddComment";
+
+
 const StoredComments = (props) => {
+
+    const [comments, setComments] = useState([])
+
     return ( 
-        <h1>Hello World!</h1>
+        <ul> 
+        {props.parentEntries.map((entry) => {
+          return (
+            <li>{entry.name}</li>
+            <li>{entry.comment}</li>
+          );
+        })}
+      </ul>
+       
      );
 }
  
