@@ -12,6 +12,7 @@ const AddComment = (props) => {
             name: name,
             comment: comment
         };
+        props.addNewEntryProperty(newComment)
     }
 
     return ( 
