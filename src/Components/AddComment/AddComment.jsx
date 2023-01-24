@@ -17,11 +17,15 @@ const AddComment = (props) => {
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <label>Name</label>
-            <input type='string' value={name} onChange={(event) => setName(event.target.value)}/>
-            <label>Comment</label>
-            <input type='string' value={comment} onChange={(event) => setComment(event.target.value)}/>
-            <button type='submit'>Submit</button>
+            <div className='form-group'>
+                <label>Name</label>
+                <input type='string' value={name} onChange={(event) => setName(event.target.value)}/>
+            </div>
+            <div className='form-group'>
+                <label>Comment</label>
+                <input type='string' value={comment} onChange={(event) => setComment(event.target.value)}/>
+            </div>
+            <button type='submit' className='btn btn-primary'>Submit</button>
         </form>
      );
 }
