@@ -4,5 +4,13 @@
     border-color: black;
     padding: 1em;
     margin: 1em;
-    
+    grid-auto-flow: column;
+}
+
+button.likeactive {
+    background-color: green;
+}
+
+button.dislikeactive {
+    background-color: red;
 }
